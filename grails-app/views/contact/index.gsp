@@ -20,6 +20,26 @@
             </g:if>
             <f:table collection="${contactList}" />
 
+			
+			<table>
+			  <tr>
+				<th>First name</th>
+				<th>Last name</th>
+				<th>Téléphone</th>
+				<th>Birthday</th>
+			  </tr>
+
+			  <g:each in="${contactList}" var="contact">
+				<tr>
+				  <td>${contact.firstname}</td>
+				  <td>${contact.lastname}</td>
+				  <td>${contact.telephonenumber}</td>
+				  <td><g:formatDate format="dd/MM/yyyy" date="${contact.birthday}"/></td>
+				</tr>
+			  </g:each>
+			</table>
+			
+
             <div class="pagination">
                 <g:paginate total="${contactCount ?: 0}" />
             </div>
