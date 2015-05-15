@@ -445,11 +445,11 @@ th.desc a {
     background-image: url(../images/skin/sorted_desc.gif);
 }
 
-.odd {
+tr:nth-child(odd) {
     background: #f7f7f7;
 }
 
-.even {
+tr:nth-child(even) {
     background: #ffffff;
 }
 

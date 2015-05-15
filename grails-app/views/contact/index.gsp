@@ -27,6 +27,8 @@
 				<th>Last name</th>
 				<th>Téléphone</th>
 				<th>Birthday</th>
+				<th></th>
+				<th></th>
 			  </tr>
 
 			  <g:each in="${contactList}" var="contact">
@@ -35,6 +37,9 @@
 				  <td>${contact.lastname}</td>
 				  <td>${contact.telephonenumber}</td>
 				  <td><g:formatDate format="dd/MM/yyyy" date="${contact.birthday}"/></td>
+					<td><a href="./"><asset:image src="edit.png" alt="Editer"/></a></td>
+					<td><a href="./"><asset:image src="delete.png" alt="Supprimer"/></a></td>
+				
 				</tr>
 			  </g:each>
 			</table>
