@@ -69,7 +69,7 @@ class ContactController {
         request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.updated.message', args: [message(code: 'contact.label', default: 'Contact'), contact.id])
-                redirect contact
+                redirect action:"index", method:"GET"
             }
             '*'{ respond contact, [status: OK] }
         }
