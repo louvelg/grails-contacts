@@ -22,10 +22,11 @@
 			
 			<table>
 			  <tr>
-				<th>Prénom</th>
-				<th>Nom</th>
-				<th>Téléphone</th>
-				<th>Date de naissance</th>
+				<g:sortableColumn property="firstname" title="Prénom" />
+				<g:sortableColumn property="lastname" title="Nom" />
+				<g:sortableColumn property="telephonenumber" title="Téléphone" />
+				<g:sortableColumn property="birthday" title="Date de naissance" />
+				<th></th>
 				<th></th>
 			  </tr>
 
