@@ -8,5 +8,6 @@ class Contact {
 	Date birthday
 
     static constraints = {
+		 telephonenumber matches: "[0-9][0-9] ?[0-9][0-9] ?[0-9][0-9] ?[0-9][0-9] ?[0-9][0-9]"
     }
 }
