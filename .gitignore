@@ -9,6 +9,8 @@
 # default HSQL database files for production mode
 /prodDb.*
 
+
+/build
 # general HSQL database files
 *Db.properties
 *Db.script
@@ -31,3 +33,4 @@
 
 # "temporary" build files
 /target
+/.gradle/
