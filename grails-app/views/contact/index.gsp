@@ -25,9 +25,8 @@
 			  <tr>
 				<th>First name</th>
 				<th>Last name</th>
-				<th>Téléphone</th>
+				<th>Phone</th>
 				<th>Birthday</th>
-				<th></th>
 				<th></th>
 			  </tr>
 
@@ -37,8 +36,10 @@
 				  <td>${contact.lastname}</td>
 				  <td>${contact.telephonenumber}</td>
 				  <td><g:formatDate format="dd/MM/yyyy" date="${contact.birthday}"/></td>
-					<td><a href="./"><asset:image src="edit.png" alt="Editer"/></a></td>
-					<td><a href="./"><asset:image src="delete.png" alt="Supprimer"/></a></td>
+				  <td>
+					<g:link action="edit" resource="${contact}"><asset:image src="edit.png" alt="Editer"/></g:link>&nbsp;&nbsp;
+					<a href="./"><asset:image src="delete.png" alt="Supprimer"/></a>
+				  </td>
 				
 				</tr>
 			  </g:each>
