@@ -37,6 +37,7 @@
 				  <td>${contact.telephonenumber}</td>
 				  <td><g:formatDate format="dd/MM/yyyy" date="${contact.birthday}"/></td>
 				  <td>
+					<g:link action="show" resource="${contact}"><asset:image src="show.png" alt="Show"/></g:link>&nbsp;&nbsp;
 					<g:link action="edit" resource="${contact}"><asset:image src="edit.png" alt="Editer"/></g:link>&nbsp;&nbsp;
 					<g:form resource="${contact}" method="DELETE" style="display:inline;">
 						<button type="submit" style="cursor:pointer; background:none; border : 0px;" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');"><asset:image src="delete.png" alt="Supprimer"/></button>
